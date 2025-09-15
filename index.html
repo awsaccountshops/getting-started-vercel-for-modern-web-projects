@@ -1,96 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
-</html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8"> 
+<style>
+/*
+* multi-line comment
+*/
+p{ line-height: 1.5em;
+font-size:16px;}
+h1, h2, h3, h4{
+    color: orange;
+	font-weight: normal;
+	line-height: 1.1em;
+	margin: 0 0 .5em 0;
+}
+h1{ font-size: 38px; }
+h2{ font-size: 32px; }
+a{
+	color: blue;
+}
+	a:hover,
+	a:active{ text-decoration: underline; }
+
+/* you can structure your code's white space so that it is as readable for when you come back in the future or for other people to read and edit quickly */
+
+body{
+    font-family: arial; font-size: 100%; line-height: 1.2em; width: 100%; margin: 0; background: #eee;
+}
+/* you can put your code all in one line like above */
+#page{ margin: 20px; }
+
+/* or on different lines like below */
+#logo{
+	width: 35%;
+	margin-top: 5px;
+	font-family: georgia;
+	display: inline-block;
+}
+/* but try and be as concise as possible */
+#nav{
+	width: 60%;
+	display: inline-block;
+	text-align: right;
+	float: right;
+}
+	#nav ul{}
+		#nav ul li{
+			display: inline-block;
+			height: 62px;
+		}
+			#nav ul li a{
+				padding: 20px;
+				background: orange;
+				color: white;
+				text-decoration: none;
+			}
+			#nav ul li a:hover{
+				background-color: #ffb424;
+				box-shadow: 0px 1px 1px #666;
+			}
+			#nav ul li a:active{ background-color: #ff8f00; }
+
+#content{
+	margin: 30px 0;
+	background: white;
+	padding: 20px;
+	clear: both;
+}
+#footer{
+	border-bottom: 1px #ccc solid;
+	margin-bottom: 10px;
+}
+	#footer p{
+		text-align: right;
+		text-transform: uppercase;
+		font-size: 80%;
+		color: grey;
+	}
+
+/* multiple styles seperated by a , */
+#content,
+ul li a{ box-shadow: 0px 1px 1px #999; }
+
+#logo img {
+    height: 100px;
+    float: left;
+}
+
+</style>
+<!-- your webpage info goes here -->
+
+    <title>Getting Started with Vercel for Modern Web Projects</title>
+	
+	<meta name="author" content="writer">
+	<meta name="description" content="Getting Started with Vercel for Modern Web Projects">
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->	
+	<link rel="stylesheet" href="Everything%20You%20Need%20to%20Know%20About%20%EB%B2%B3%EB%AA%A8%EC%95%84%ED%8B%B0%EB%B9%84%20for%20Sports%20Streaming_files/style.xml" type="text/css">
+	
+</head>
+<body>
+
+<!-- webpage content goes here in the body -->
+
+	<div id="page">
+		<div id="logo">
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="#">Home</a></li>
+			</ul>	
+		</div>
+		<div id="content">
+<div class="cl-preview-section">
+<h1 id="getting-started-with-vercel-for-modern-web-projects">Getting Started with Vercel for Modern Web Projects</h1>
+</div>
+<div class="cl-preview-section">
+<p>If you are looking for <a href="http://awsaccountshops.com/"><strong>aws accounts for sale</strong></a>, Vercel can make your life a lot easier. It lets you deploy web projects quickly without worrying about servers or setup. You can focus on building your app, while Vercel handles hosting and performance automatically.</p>
+</div>
+<div class="cl-preview-section">
+<p>Vercel works well with frameworks like Next.js, React, and even simple static sites. You can push your code, and it goes live in minutes. There is no need to tweak complex settings or manage infrastructure manually. It feels almost like magic when your project shows up online instantly.</p>
+</div>
+<div class="cl-preview-section">
+<p>One of the best things is previews. Every time you make a change, Vercel gives you a live preview link. You can share it with friends, clients, or colleagues before making it public. This makes collaboration much easier and faster than sending screenshots or files back and forth.</p>
+</div>
+<div class="cl-preview-section">
+<p>Performance is another reason developers love Vercel. Sites load fast because it uses smart caching and a global network. Your visitors get the content from the closest server, which keeps them happy and engaged. Slow websites can frustrate users, but Vercel avoids that problem almost completely.</p>
+</div>
+<div class="cl-preview-section">
+<p>You also get control over your projects. You can manage domains, environment variables, and settings from the dashboard. Even if you are new to web development, the interface feels simple and clear. It is easy to connect with external services, databases, or cloud storage.</p>
+</div>
+<div class="cl-preview-section">
+<p>Many developers combine Vercel with AWS for extra power. For example, you can store files on Amazon S3 or run serverless functions with AWS Lambda. Vercel handles the frontend, while AWS provides backend services. This combo keeps things fast and reliable.</p>
+</div>
+<div class="cl-preview-section">
+<p>Security is built-in. Your projects get HTTPS automatically, and you can add authentication if needed. It is reassuring to know that your website and your users&rsquo; data are protected without extra setup. You can focus on features and design instead of worrying about certificates and protocols.</p>
+</div>
+<div class="cl-preview-section">
+<p>Scaling is smooth too. If your project gets popular, Vercel handles traffic spikes without crashing. You don&rsquo;t have to buy extra servers or guess how much capacity you need. Everything adapts automatically, which is a huge relief for small teams or solo developers.</p>
+</div>
+<div class="cl-preview-section">
+<p>Starting with Vercel is simple. You sign up, link your GitHub or GitLab account, push your code, and watch it go live. The sense of satisfaction when your site appears online is hard to describe. It motivates you to keep building and experimenting.</p>
+</div>
+<div class="cl-preview-section">
+<p>In the end, Vercel makes modern web projects accessible and fun. You can focus on creativity, speed, and user experience. Pair it with AWS services if needed, and you have a solid setup for almost anything. Whether it is a portfolio, a blog, or a complex web app, Vercel gives you the tools to succeed without stress.</p>
+</div>
+		<div id="footer">
+			<p>
+				Webpage made by <a href="#" target="_blank">writer</a>
+			</p> 
+		</div>
+	</div>
+</div></body><style id="igor_ext_nofollow">a[rel~='nofollow'],a[rel~='sponsored'],a[rel~='ugc']{outline:.14em dotted red !important;outline-offset:.2em;}a[rel~='nofollow'] img,a[rel~='sponsored'] img,a[rel~='ugc'] img{outline:2px dotted red !important;outline-offset:.2em;}</style></html>
